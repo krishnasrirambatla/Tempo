@@ -10,6 +10,7 @@
 	<properties>
 		<spring.version>3.1.2.RELEASE</spring.version>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -37,7 +38,22 @@
 			<version>${spring.version}</version>
 		</dependency>
 	</dependencies>
+	
+
+	
 	<build>
 		<finalName>Tempo</finalName>
+		<plugins>
+		<plugin>
+		<groupId>org.apache.tomcat.maven</groupId>
+		<artifactId>tomcat7-maven-plugin</artifactId>
+		<version>2.2</version>
+		<configuration>
+			<url>http://localhost:8080/manager/text</url>
+			<server>TomcatServer</server>
+			<path>/Tempo</path>
+		</configuration>
+		</plugin>
+	</plugins>	
 	</build>
 </project>
