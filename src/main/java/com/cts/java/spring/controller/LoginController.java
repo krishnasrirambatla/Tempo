@@ -9,6 +9,7 @@ public class LoginController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/login")
 	public String viewLogin() {
+		System.out.println("This is in Login Contorller");
 		return "login";
 	}
 }
