@@ -1,0 +1,3 @@
+[submodule "GitProject"]
+	path = GitProject
+	url = https://github.com/krishnasrirambatla/GitProject.git
